@@ -1,0 +1,35 @@
+<!-- 
+1. Please list and explain in 1-2 sentences of the top 10 OWASP risks. 
+    1. Broken Access Control
+        - When the intended permissions of an application or system are breached, attackers are able to access, modify, delete, or do other actions.
+    2. Cryptographic Failures
+        - When sensitive data, such as passwords, credit card numbers, health records, personal information, and business secrets, are not securely protected, attackers frequently target them. The first step is to assess the data protection requirements for data in transit and at rest, particularly if the data is under to privacy laws.
+    3. Injections
+        - An attacker simply sends malicious data to enable the program to process it and perform an unintended action. Injection attack are common, particularly in older code that does not check or sanitize user-supplied information.
+    4. Insecure Design
+        - The importance of threat modeling, secure design patterns, and concepts is emphasized. Insecure design security safeguards were never established to fight against specific threats. One issue that contributes to insecure design is a lack of business risk profile inherent in the software or system being produced, which results in a failure to decide what level of security design is necessary.
+    5. Security Misconfigurations
+        - Occur when a web application component is vulnerable to an attack due to a misconfiguration or an insecure configuration option. Misconfiguration vulnerabilities are configuration flaws in software components and subsystems, as well as in user administration.
+    6. Vulnerable and Outdated Components
+        - When a software component is unsupported, out of date, or vulnerable to a known attack, you may use unsecured software components in production environments, threatening the web application.
+    7. Indetification and Authentication Flaws
+        - An application fails to provide or effectively protect functions related to user identification, authentication, or session management. Attackers may be able to exploit identification and authentication failures by compromising passwords, keys, session tokens, or other software flaws to assume the identities of other users temporarily or permanently.
+    8. Software and Data Integrity Failures
+        - A code and architecture that does not guard against integrity breaches. This is when an application uses plugins, libraries, or modules from untrusted sources, repositories, or content delivery networks.
+    9. Security Logging and Monitoring Flaws
+        - Help with active breach detection, escalation, and response. Without recording and monitoring, breach detection is difficult, leaving your application open to attacks on every component of the application.
+    10. Server-Side Request Forgery (SSRF)
+        - Occur whenever a web application tries to get a remote resource without first validating the user-supplied URL. The vulnerable application will frequently be able to read, write, or import data through a URL. The attacker can then manipulate the program to send queries to inappropriate sites, usually bypassing security controls.
+
+2. In 2-3 sentences, please explain what NoSQL Injection is and a solution.
+    - NoSQL Injection allows attackers to inject code into database systems and execute code within the application. We sanitized user inputs to avoid this. MongoDB includes a sanitation package; simply install the npm package express-mongo-sanitize.
+
+3. In 2-3 sentences, please explain what cross site scripting is and a solution.
+    - This occurs when an attacker sends a script-injected link to the victim. This might send private information not just to the victim but also to the attacker. However, we can prevent this attack by installing the xss-clean package. This sanitizes user input from POST bodies, GET queries, and URL parameters.
+
+4. In 2-3 sentences, please explain what rate limiting is and a solution. 
+    - Limiting is giving attempt and enough time to make request. This prevents and protects against several failed login attempts. Installing the express-rate-limit package might help us in providing a limit to the user.
+
+5. In 2-3 sentences, please explain what CORS is and a solution. 
+    - Permits web scripts to interact with resources of different origins. The installation of the CORS package gives us control over who and where the script can be executed.
+ -->
